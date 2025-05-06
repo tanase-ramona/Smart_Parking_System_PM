@@ -11,7 +11,9 @@ A parking system utilizing infrared sensors, Leds an servo-motors, with Raspberr
 :::
 **Autor**: Tanase Elena-Ramona
 
-**Link GitHub**: (https://gitlab.cs.pub.ro/elena_ramona.tanase/pmrust.pages.upb.ro)
+Author: Tanase Elena-Ramona  
+GitHub Project Link: https://github.com/UPB-PMRust-Students/proiect-tanase-ramona
+:::
 
 ---
 
