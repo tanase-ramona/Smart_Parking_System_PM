@@ -83,7 +83,7 @@ At the exit, the IR sensor triggers the exit barrier servo to lift and allows th
 
 I have purchased all the necessary components for the project, along with additional materials such as boxes, glue, and other items needed to complete the physical assembly. 
 
-### Week 7 - 19 May
+### Week 13 - 19 May
 
 After gathering everything, I followed the schematic to assemble the components in the correct order and positions. Once the assembly was completed, I tested each part of the system to ensure it was functioning properly.
 
@@ -110,8 +110,17 @@ The entrance and exit of the parking lot include:
 - 7-segment display: Shows the number of available parking spots
 - Traffic light (Red and Green LEDs): Indicates whether parking spaces are available or the lot is full
 
+![proiect1](parcare1.webp)
+
+![proiect2](parcare2.webp)
+
+![proiect3](parcare3.webp)
+
+![proiect4](parcare4.webp)
+
 ## Schematics
 
+<<<<<<< HEAD
 ![parc1](parcare1.webp)
 
 ![parc2](parcare2.webp)
@@ -121,6 +130,9 @@ The entrance and exit of the parking lot include:
 ![parc4](parcare4.webp)
 
 ![schematic](schematic_final.svg)
+=======
+![Schematic](sch.webp)
+>>>>>>> Etapa hardware
 
 ---
 
