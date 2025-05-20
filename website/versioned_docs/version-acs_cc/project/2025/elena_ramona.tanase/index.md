@@ -9,9 +9,7 @@ A parking system utilizing infrared sensors, Leds an servo-motors, with Raspberr
 **Link GitHub**: (https://github.com/UPB-PMRust-Students/proiect-tanase-ramona)
 
 :::
-**Autor**: Tanase Elena-Ramona
 
-:::
 
 ---
 
@@ -120,7 +118,6 @@ The entrance and exit of the parking lot include:
 
 ## Schematics
 
-<<<<<<< HEAD
 ![parc1](parcare1.webp)
 
 ![parc2](parcare2.webp)
@@ -130,9 +127,6 @@ The entrance and exit of the parking lot include:
 ![parc4](parcare4.webp)
 
 ![schematic](schematic_final.svg)
-=======
-![Schematic](sch.webp)
->>>>>>> Etapa hardware
 
 ---
 
