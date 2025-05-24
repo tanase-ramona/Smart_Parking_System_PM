@@ -78,15 +78,16 @@ At the exit, the IR sensor triggers the exit barrier servo to lift and allows th
 
 ### Week 6 - 12 May
 
-I have purchased all the necessary components for the project, along with additional materials such as boxes, glue, and other items needed to complete the physical assembly. After gathering everything, I followed the schematic to assemble the components in the correct order and positions. Once the assembly was completed, I tested each part of the system to ensure it was functioning properly.
+I have purchased all the necessary components for the project, along with additional materials such as boxes, glue, and other items needed to complete the physical assembly. 
 
 ### Week 7 - 19 May
 
-- nothing yet
+After gathering everything, I followed the schematic to assemble the components in the correct order and positions. Once the assembly was completed, I tested each part of the system to ensure it was functioning properly.
 
 ### Week 20 - 26 May
 
-- nothing yet
+During the final week, I dedicated my time to writing the code for the project. I researched how to properly connect and control the different hardware components through software, ensuring each part communicated and functioned as intended. Throughout this process, I tested multiple code variations and approaches to handle sensor input, motor control, and timing logic. After several adjustments, I successfully developed a final version of the code that worked reliably with the assembled system.
+
 
 ---
 
@@ -122,12 +123,17 @@ The entrance and exit of the parking lot include:
 
 ## Software
 
-| Library           | Description                                 | Usage                                               |
-|-------------------|---------------------------------------------|-----------------------------------------------------|
-| embassy-executor| Asynchronous executor for Rust embedded systems | Used for task scheduling and asynchronous programming |
-| embassy-time    | Time management library                     | Used for time-based operations such as delays       |
-| embassy-rp     | Peripheral access library                   | Used for initializing and interacting with peripherals |
-| gpio            | GPIO manipulation                           | Used for interacting with GPIO pins                 |
+| Library                 | Description                                      | Usage                                                                  |
+|-------------------------|--------------------------------------------------|------------------------------------------------------------------------|
+| embassy-executor        | Asynchronous executor for Rust embedded systems | Used for task scheduling and asynchronous programming                  |
+| embassy_executor::Spawner | Task spawner from embassy-executor           | Used to spawn asynchronous tasks                                       |
+| embassy-time            | Time management library                          | Used for time-based operations such as delays                          |
+| embassy_time::Timer     | Timer utility from embassy-time                  | Used to create delays based on `Duration`                              |
+| embassy-rp              | Peripheral access library                        | Used for initializing and interacting with peripherals                 |
+| embassy_rp::gpio        | GPIO handling from embassy-rp                    | Used for configuring GPIO input/output pins and their levels/pulls     |
+| embassy_rp::pwm         | PWM module from embassy-rp                       | Used to configure and control PWM signals using the `Pwm` peripheral   |
+| gpio                    | GPIO manipulation                                | Used for interacting with GPIO pins                                    |
+
 
 
 ## Bill of Materials
