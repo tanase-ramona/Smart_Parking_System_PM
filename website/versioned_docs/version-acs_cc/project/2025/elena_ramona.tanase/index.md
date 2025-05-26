@@ -117,7 +117,7 @@ The entrance and exit of the parking lot include:
 
 ![parc4](parcare4.webp)
 
-![schematic](schematic.svg)
+![schematic](schematic_final.svg)
 
 ---
 
