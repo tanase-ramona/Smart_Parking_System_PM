@@ -123,16 +123,17 @@ The entrance and exit of the parking lot include:
 
 ## Software
 
-| Library                 | Description                                      | Usage                                                                  |
-|-------------------------|--------------------------------------------------|------------------------------------------------------------------------|
-| embassy-executor        | Asynchronous executor for Rust embedded systems | Used for task scheduling and asynchronous programming                  |
-| embassy_executor::Spawner | Task spawner from embassy-executor           | Used to spawn asynchronous tasks                                       |
-| embassy-time            | Time management library                          | Used for time-based operations such as delays                          |
-| embassy_time::Timer     | Timer utility from embassy-time                  | Used to create delays based on `Duration`                              |
-| embassy-rp              | Peripheral access library                        | Used for initializing and interacting with peripherals                 |
-| embassy_rp::gpio        | GPIO handling from embassy-rp                    | Used for configuring GPIO input/output pins and their levels/pulls     |
-| embassy_rp::pwm         | PWM module from embassy-rp                       | Used to configure and control PWM signals using the `Pwm` peripheral   |
-| gpio                    | GPIO manipulation                                | Used for interacting with GPIO pins                                    |
+| Library                   | Description                                      | Usage                                                                 |
+|---------------------------|--------------------------------------------------|-----------------------------------------------------------------------|
+| `embassy-executor`        | Asynchronous executor for Rust embedded systems | Provides async runtime; used to spawn and run async tasks             |
+| `embassy-time`            | Time management for async embedded              | Allows delay functionality without blocking                          |
+| `embassy_rp::peripherals` | Peripheral instances                            | Used to access named pins like `PIN_12`, `PWM_SLICE6`                 |
+| `embassy_rp::gpio`        | GPIO handling                                   | Used for LEDs, IR sensors (`Input`, `Output`, `Level`, `Pull`)       |
+| `embassy_rp::pwm`         | PWM support                                     | Used to control servos (`Pwm`, `PwmConfig`)                           |
+| `fixed::traits::ToFixed`  | Fixed-point conversion                          | Converts integers to fixed-point for PWM divider config               |
+| `core::sync::atomic`      | Thread-safe atomic operations                   | Used for global shared state: `FREE_SPOTS`, `SENSORx_OCCUPIED`       |
+| `defmt`, `defmt_rtt`      | Lightweight embedded logging                    | Prints debug info via RTT (e.g., `info!("Moving up")`)               |
+| `panic_probe`             | Minimal panic handler for `no_std`              | Logs panic info when something goes wrong                            |
 
 
 
